@@ -16,9 +16,13 @@ const buttonEl = document.getElementById("btn");
 const outputEl = document.getElementById("output");
 
 async function getUsersData() {
-  const resp = await fetch(ENDPOINT);
-  const props = await resp.json();
-  buttonEl.addEventListener("click", () => renderData(props, outputEl));
+  try {
+    const resp = await fetch(ENDPOINT);
+    const props = await resp.json();
+    buttonEl.addEventListener("click", () => renderData(props, outputEl));
+  } catch (error) {
+    console.log(`Something went wrong. ${error.message}`);
+  }
 }
 getUsersData();
 

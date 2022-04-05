@@ -13,9 +13,13 @@ const ENDPOINT = "cars.json";
 const outputEl = document.getElementById("output");
 
 async function getCars() {
-  const resp = await fetch(ENDPOINT);
-  const data = await resp.json();
-  renderCars(data, outputEl);
+  try {
+    const resp = await fetch(ENDPOINT);
+    const data = await resp.json();
+    renderCars(data, outputEl);
+  } catch (error) {
+    console.log(`Something went wrong. ${error.message}`);
+  }
 }
 getCars();
 
