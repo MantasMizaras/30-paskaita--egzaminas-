@@ -3,8 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 /* Mobile first */
@@ -26,4 +25,19 @@
 .container h1 {
   margin-top: 50px;
   color: #333;
+}
+
+/* added style */
+
+#output {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1%;
+  margin: 0.5%;
+}
+
+.car-card {
+  border: 1px solid brown;
+  border-radius: 0.625em;
+  padding-left: 0.5em;
 }
