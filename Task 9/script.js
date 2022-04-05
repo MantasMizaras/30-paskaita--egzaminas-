@@ -6,3 +6,20 @@ title, director, budget
 Metodas: 
 wasExpensive() - jeigu filmo budget bus didesnę nei 100 000 000 mln USD, tada gražins true, kiru atveju false 
 ------------------------------------------------------------------------------------------------------ */
+class Movie {
+  constructor(title, director, budget) {
+    this.title = title;
+    this.director = director;
+    this.budget = budget;
+    this.wasExpensive = function () {
+      if (this.budget > 100000000) {
+        return true;
+      } else {
+        return false;
+      }
+    };
+  }
+}
+
+const newMovie = new Movie("Best film ever", "Smith Joe", 511000000);
+// console.log(newMovie.wasExpensive());
