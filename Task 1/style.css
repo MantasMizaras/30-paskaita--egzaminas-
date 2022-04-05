@@ -3,8 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 /* Mobile first */
@@ -62,4 +61,42 @@ form {
   #submit-btn {
     font-size: 2em;
   }
+}
+
+/* added style */
+#output {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pounds {
+  text-align: center;
+  font-size: 1.5em;
+  width: 40%;
+  background-color: cadetblue;
+  color: #fff;
+  padding: 1em;
+  margin-bottom: 0.5em;
+}
+
+.grams {
+  text-align: center;
+  font-size: 1.5em;
+  width: 40%;
+  background-color: chocolate;
+  color: #f7f7f7;
+  padding: 1em;
+  margin-bottom: 0.5em;
+}
+
+.ounces {
+  text-align: center;
+  font-size: 1.5em;
+  width: 40%;
+  background-color: darkcyan;
+  color: #f7f7f7;
+  padding: 1em;
+  margin-bottom: 0.5em;
 }
